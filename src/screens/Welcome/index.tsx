@@ -1,4 +1,5 @@
 import img from '../../assets/logoSite.png';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 export const Welcome = () => {
@@ -9,9 +10,9 @@ export const Welcome = () => {
           <img src={img} />
           <p className="textIndex">Recarregue suas baterias</p>
           <p className="textIndex">Relaxe com a gente!</p>
-          <a href="about\index.html">
+          <Link to="/home">
             <button className="buttonIndex">Saiba mais</button>
-          </a>
+          </Link>
         </div>
       </div>
     </body>
